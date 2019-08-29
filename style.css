@@ -45,7 +45,7 @@
     padding: 5px;
     margin-bottom: 4px;
     margin-left: 20px;
-    margin-top:-5px;
+    margin-top:-2px;
     transition-duration: 0.8s;
 
     height: 1.4em;
@@ -167,11 +167,11 @@ header
 
 }
 
-.kit h5
+.kit h2
 {
     background-color: #EEEEECFF;
     position: relative;
-    top:-22px;
+    top:-20px;
 
     padding-top: 12px;
     padding-bottom: 12px;
@@ -209,6 +209,8 @@ li
 .boutonJaune
 {
     transition-duration: 0.8s;
+
+    overflow: hidden;
 }
 
 .boutonJaune:hover
@@ -221,6 +223,11 @@ li
     #prixPart
     {
         flex-direction: column;
+
+        position: relative;
+
+        left: 20%;
+
     }
 
     #nav-bar
@@ -228,6 +235,16 @@ li
         display: flex;
         flex-direction: column;
         text-align: left;
+    }
+
+    #main
+    {
+        
+    }
+
+    .kit
+    {
+        width: 60%;
     }
     
 }
