@@ -29,24 +29,33 @@
 {
     padding-top: 27px;
 
+    
+    width: 60%;
+    display: flex;
+    justify-content: right;
 }
 
 .nav-link
 {
     font-family: 'Numito', monospace;
-    margin: 50px;
+    
     color: black;
     text-decoration: none;
     font-size: 1.2em;
     padding: 5px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+    margin-top:-5px;
     transition-duration: 0.8s;
+
+    height: 1.4em;
 }
 
 .nav-link:hover
 {
     background-color: #EEEEECFF;
     border-radius: 5px;
-    padding: 5px;
+   
     box-shadow: 3px 3px 6px #EEEEECFF;
 }
 
@@ -70,7 +79,7 @@ body
 {
     width: 66%;
     position: relative;
-    top: 70px;
+    top: 90px;
     left: 16%;
 }
 
@@ -119,14 +128,106 @@ iframe
 
 header
 {
-    margin: 15px 25px 15px 25px;
+    margin: -20px 25px 15px 2%;
     position: fixed;
-    top: -20px;
-    left: 60px;
+
+    width: 93%;
+    /*top: -20px;
+    left: 60px;*/
     z-index: 999;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
+
+    
 }
 
+#prixPart
+{
+    margin-top: 50px;
+    display: flex;
+
+}
+
+.kit
+{
+    border: 1px solid black;
+    border-radius: 3px;
+
+    width: 30%;
+
+    
+    
+    margin: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.kit h5
+{
+    background-color: #EEEEECFF;
+    position: relative;
+    top:-22px;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.kit p
+{
+    padding-left: 40px;
+    padding-right: 40px;
+
+    text-align: justify;
+
+    flex: 1;
+}
+
+.kitButton
+{
+    margin: 15px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+ul
+{
+    text-align: left;
+}
+
+li
+{
+    margin-bottom: 5px;
+}
+
+.boutonJaune
+{
+    transition-duration: 0.8s;
+}
+
+.boutonJaune:hover
+{
+    background-color: #FEAB30FF;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    #prixPart
+    {
+        flex-direction: column;
+    }
+
+    #nav-bar
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+}
